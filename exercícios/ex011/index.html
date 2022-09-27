@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-br">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador. </p>
+
+    <picture>
+
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        
+        <source media="(max-width:1000px)" srcset="imagens/foto-m.png" type="image/png">
+        
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+   
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos reproduzir Áudios em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/rock1.mp3"type="audio/mpeg">
+        <source src="midia/rock1.mp3"type="audio/ogg">
+        <source src="midia/rock1.mp3"type="audio/wav">
+
+    <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/rock1.mp3" > Click aqui para baixar o arquivo MP3 </a></p>
+
+    </audio>
+
+</body>
+</html>
