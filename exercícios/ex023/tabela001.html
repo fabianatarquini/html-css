@@ -6,26 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeira</title>
     <style>
+        
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
         
         table{
             width: 400px;
+            height: 400px;
             border-collapse: collapse;
         }
-        tr.linha{
-           
-            background-color: antiquewhite;
-        }
-
+        
         td{
             border: 1px solid black;
             padding: 8px;
+            text-align: center; /*alinhamento horizontal*/
+            vertical-align: middle; /*alinhamento vertical*/
+            
         }
-        td.dado{
-            background-color: rgb(249, 249, 144);
-        }
+       
     </style>
 </head>
 <body>
@@ -45,7 +44,7 @@
 
         
 
-        <tr class="linha"> <!--segunda linha-->
+        <tr> <!--segunda linha-->
             <td>A2
             <td>B2
             <td>C2
@@ -54,7 +53,7 @@
         
         <tr>  <!--terceira linha-->
             <td>A3</td> 
-            <td class="dado">B3</td>
+            <td>B3</td>
             <td>C3</td>
 
 
