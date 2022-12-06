@@ -3,5 +3,5 @@
 
 Gerenciando repositórios!
 
-<a href='https://fabianatarquini.github.io/html-css/exercícios/ex002/index.html'> Executar o exercício 002 </a>
+<a href='https://fabianatarquini.github.io/html-css/exerc%C3%ADcios/ex026/mq004/index.html'> Executar teste de Media Queries </a>
 
