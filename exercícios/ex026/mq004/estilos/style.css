@@ -1,91 +1,50 @@
 @charset "UTF-8";
 
-/*versão mobile first*/
-
-/* typical Device Breakpoints
-------------------------------
-Pequenas telas: até 600px
-Celular: de 600px até 768px
-Tablet: 768 até 992px
-Deskytop: 992 até 1200px
-Grandes telas: acima de 1200px
-
-
-*/
-
-@media print{ /*impressão */
-
-   *{
-        font-family: 'Courier New', Courier, monospace;
-    }
-
-    main{
-
-        border: 2px solid black;
-    }
-
-    main::after{
-
-        content: 'Essa impressão foi feita através do site... ';
-        text-decoration: overline;
-    }
-
-    main h1{
-     
-        text-shadow: none;
-        color: black;
-    }
-
-    img#phone{display: none;}
-    img#tablet{display: none;}
-    img#print{display: block;}
-    img#pc{display: none;}
-    img#tv{display: none;}
-
-
-}
-
-@media screen and (min-width: 768px) and (max-width:992px) { 
+/*Todas as demais mídias*/
     
-    body{
-        
-        background-image: url(../imagens/back-tablet.jpg);
-    }
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
-    img#phone{display: none;}
-    img#tablet{display: block;}
-    img#print{display: none;}
-    img#pc{display: none;}
-    img#tv{display: none;}
+html{
+    
+    height: 100vh;
 
 }
 
-@media screen and (min-width:992px ) and (max-width:1200px){ /* Desktop*/
-
-    body{
-        background-image: url(../imagens/back-pc.jpg);
-    }
-
-    img#phone{display: none;}
-    img#tablet{display: none;}
-    img#print{display: none;}
-    img#pc{display: block;}
-    img#tv{display: none;}
-
+body{
+    background: black url(../imagens/back-phone.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
-@media screen and (min-width:1200px){ 
-
-    body{background-image: url(../imagens/back-tv.jpg);}
-
-    main{
-        width: 700px;
-    }
-
-    img#phone{display: none;}
-    img#tablet{display: none;}
-    img#print{display: none;}
-    img#pc{display: none;}
-    img#tv{display: block;}
-
+main{
+    background-color: rgba(255, 255, 255, 0.786);
+    width: 90vw;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
 }
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.516);
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+img#phone{display: block;}
+img#tablet{display: none;}
+img#print{display: none;}
+img#pc{display: none;}
+img#tv{display: none;}
