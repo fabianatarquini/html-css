@@ -13,11 +13,38 @@ Grandes telas: acima de 1200px
 
 */
 
-@media print{ /*impressão */}
+@media print{ /*impressão */
 
-@media screen and (min-width: 768px) and (max-width:992px) { /*Table */
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main{
+
+        border: 2px solid black;
+    }
+
+    main h1{
+     
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) { 
     
-    body{background-image: url(../imagens/back-tablet.jpg);}
+    body{
+        
+        background-image: url(../imagens/back-tablet.jpg);
+    }
 
     img#phone{display: none;}
     img#tablet{display: block;}
@@ -41,7 +68,7 @@ Grandes telas: acima de 1200px
 
 }
 
-@media screen and (min-width:1200px){ /*Grandes telas*/
+@media screen and (min-width:1200px){ 
 
     body{background-image: url(../imagens/back-tv.jpg);}
 
